@@ -13,23 +13,16 @@ function getInput() {
     }else if (year==""){
         alert("Kindly enter your year of birth")
     }else if (year < 0 || year > 99){
-        alert("Kindly enter your correct year of birth")
-    }else if (year > 100){
-        alert ("Kindly enter your correct year of birth")
+        alert("Kindly enter your correct year of birth (00 -99)")
     }else if (month ==""){
         alert("Kindly enter your month of birth in figure (1-12")
-    }else if (month < 1){
-        alert("Kindly enter your correct month of birth in figure (1-12)")
-    }else if (month > 12){
+    }else if (month < 1 || month > 12){
         alert("Kindly enter your correct month of birth in figure (1-12)")
     }else if (date ==""){
         alert("Kindly enter your date of birth")
-    }else if (date > 1){
+    }else if (date > 1 || date > 31){
         alert("Kindly enter your correct date of birth in figure (1-31)")
-    }else if (date > 31){
-        alert("Kindly enter your correct date of birth in figure (1-31)")
-    }else if (gender ==""){
-        alert("Kindly choose your gender")
+    }
     }    
 }
 //calculation func
