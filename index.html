@@ -51,30 +51,32 @@
                       </div>
                   </div> 
                 </div>
-                <div class="col-md-6 right">
+                <div class="col-md-6">
                     <div class="jumbotron p-0 right">
-                        <div class="panel col-sm-6 offset-sm-3">
+                        <div class="overlay">
+                            <div class="panel col-sm-6 offset-sm-3">
+                                <br>
+                                <h4>Find out your Ghananian name!</h4>
+                            <div class="form-group top-form">
+                                <label for="year" class="labels">Year of birth:</label>
+                                <input type="number" placeholder="Enter your year of birth. e.g. 1978" class="form-control" id="year" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="month" class="labels">Month of birth:</label>
+                                <input type="number" placeholder="Enter your month of birth. e.g. 12" class="form-control" id="month" required  min="0" max="12">
+                            </div>
+                            <div class="form-group">
+                                <label for="Date" class="labels">Date of birth:</label>
+                                <input type="number" placeholder="Enter your date of birth. e.g. 25" class="form-control" id="date" required min="0" max="31">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender" class="labels">Select your gender:</label>
+                                <input type="radio" class="gender-labels" value="male"  id="rad1" name="rads" required> Male
+                                <input type="radio" class="gender-labels" value="female" id="rad1" name="rads" required> Female
+                            </div>
                             <br>
-                            <h4>Find out your Ghananian name!</h4>
-                        <div class="form-group top-form">
-                            <label for="year" class="labels">Year of birth:</label>
-                            <input type="number" placeholder="Enter your year of birth. e.g. 1978" class="form-control" id="year" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="month" class="labels">Month of birth:</label>
-                            <input type="number" placeholder="Enter your month of birth. e.g. 12" class="form-control" id="month" required  min="0" max="12">
-                        </div>
-                        <div class="form-group">
-                            <label for="Date" class="labels">Date of birth:</label>
-                            <input type="number" placeholder="Enter your date of birth. e.g. 25" class="form-control" id="date" required min="0" max="31">
-                        </div>
-                        <div class="form-group">
-                            <label for="gender" class="labels">Select your gender:</label>
-                            <input type="radio" class="gender-labels" value="male"  id="rad1" name="rads" required> Male
-                            <input type="radio" class="gender-labels" value="female" id="rad1" name="rads" required> Female
-                        </div>
-                        <br>
-                            <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Get your Cute Name!</button></a>     
+                                <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Get your Cute Name!</button></a>     
+                            </div>
                         </div>
                     </div>
                 </div>
