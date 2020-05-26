@@ -44,9 +44,10 @@
                                       <li>Thursday:  Yaw</li>
                                       <li>Friday: Kofi</li>
                                       <li>Saturday: Kwame</li>
-                                  </ul>
-                              </div>
-                              <p class="q-text">What's your akan name?</p>
+                                  </ul>                                 
+                              </div> 
+                              <p class="intro">These "day names" have further meanings concerning the soul and character of the person.</p>
+                              <p class="intro2">What's your Ghananian Akan name?</p>                            
                           </div>
                       </div>
                   </div> 
@@ -56,7 +57,7 @@
                         <div class="overlay">
                             <div class="panel col-sm-6 offset-sm-3">
                                 <br>
-                                <h4>Find out your Ghananian name!</h4>
+                                <h4 class="head2">Find out your Ghananian name!</h4>
                             <div class="form-group top-form">
                                 <label for="year" class="labels">Year of birth:</label>
                                 <input type="number" placeholder="Enter your year of birth. e.g. 1978" class="form-control" id="year" required>
@@ -70,9 +71,14 @@
                                 <input type="number" placeholder="Enter your date of birth. e.g. 25" class="form-control" id="date" required min="0" max="31">
                             </div>
                             <div class="form-group">
-                                <label for="gender" class="labels">Select your gender:</label>
-                                <input type="radio" class="gender-labels" value="male"  id="rad1" name="rads" required> Male
-                                <input type="radio" class="gender-labels" value="female" id="rad1" name="rads" required> Female
+                                <label for="gender" class="labels">Select your gender:</label>             
+                                <div class="labels">
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                    <label for="male">&nbsp;&nbsp;Male</label>
+                                    &nbsp;&nbsp; &nbsp;&nbsp;
+                                    <input type="radio" name="gender" value="Female" id="female">
+                                    <label for="female">&nbsp;&nbsp;Female</label>
+                                </div>                                
                             </div>
                             <br>
                                 <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Get your Cute Name!</button></a>     
