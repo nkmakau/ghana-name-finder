@@ -2,8 +2,28 @@
 body{
   background-color: #978ae6;
 }
+.parent{
+    margin-top: 10px;
+    margin-bottom: 0;
+    height: 670px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: #626f92;
+    box-shadow: 1px 0px 2px #ffffff;
+}
 .left{
-    background-image: url(../images/girl.jpg);
+    background-image: url(../images/akan-3.jpg);
+    background-size: cover;
+}
+.right{
+    background-image: url(../images/girl-3.jpg);
+    background-size: cover;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px 0 0 5px;
+    height: 670px;   
 }
 h1{
     color: #ffffff;
