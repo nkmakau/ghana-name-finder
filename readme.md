@@ -1,4 +1,4 @@
-# Akan name generator
+# Ghana Name Finder
 #### Simple web app that generates an Akan name based on the date of birth and gender by determining the day one was born, 14/8/2019
 ![alt text](images/app.png)
 
@@ -36,7 +36,8 @@ Here is a run through of how to set up the application
 
 ## Technologies Used
 * HTML  
-* CSS (Bootstrap)
+* CSS 
+* Bootstrap
 * Javascript
 
 ## Support and contact details
