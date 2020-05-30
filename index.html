@@ -52,48 +52,57 @@
                       </div>
                   </div> 
                 </div>
-                <div class="col-md-6">
-                    <div class="jumbotron p-0 right">
-                        <div class="overlay">
-                            <div class="panel col-sm-6 offset-sm-3">
-                                <br>
-                                <h4 class="head2">Find out your Ghananian name!</h4>
+                <div class="col-md-6 right">
+                  <div class="overlay">
+                    <div class="panel col-sm-6 offset-sm-3">
+                        <br>
+                        <h4 class="head2">Find out your Ghananian name!</h4>
                             <div class="form-group top-form">
-                                <label for="century" class="labels">Century of birth:</label>
-                                <input type="number" placeholder="Enter your century of birth. e.g. 19" class="form-control" id="century" required>
+                              <label for="century" class="labels">Century:</label>
+                              <input type="number" class="form-control" placeholder="Enter your century of birth. e.g. 19" id="century" required min="19" max="20"">
                             </div>
                             <div class="form-group">
-                                <label for="year" class="labels">Year of birth:</label>
-                                <input type="number" placeholder="Enter your year of birth. e.g. 1978" class="form-control" id="year" required>
+                              <label for="year" class="labels">Year:</label>
+                              <input type="number" placeholder="Enter your year of birth. e.g. 67" class="form-control" id="year" required min="0" max="100">
                             </div>
                             <div class="form-group">
-                                <label for="month" class="labels">Month of birth:</label>
-                                <input type="number" placeholder="Enter your month of birth. e.g. 12" class="form-control" id="month" required  min="0" max="12">
+                              <label for="month" class="labels">Month:</label>
+                              <input type="number" class="form-control" placeholder="Enter your month of birth. e.g. 12" id="month" required min="1" max="12">
                             </div>
                             <div class="form-group">
-                                <label for="date" class="labels">Date of birth:</label>
-                                <input type="number" placeholder="Enter your date of birth. e.g. 25" class="form-control" id="date" required min="0" max="31">
+                              <label for="monthDay" class="labels">Date of Birth:</label>
+                              <input type="number" placeholder="Enter your date of birth. e.g. 25" class="form-control" id="monthday" required min="1" max="31">
                             </div>
-                            <div class="form-group">
-                                <label for="gender" class="labels">Select your gender:</label>             
-                                <div class="labels">
-                                    <input type="radio" name="gender" id="male" value="Male">
-                                    <label for="male">&nbsp;&nbsp;Male</label>
-                                    &nbsp;&nbsp; &nbsp;&nbsp;
-                                    <input type="radio" name="gender" value="Female" id="female">
-                                    <label for="female">&nbsp;&nbsp;Female</label>
-                                </div>                                
-                            </div>
+                            <form class="radio-button">
+                              <label for="gender" class="labels">Select your Gender:</label>
+                              <input type="radio" class="glabels" value="male" id="rad1" name="rads" required>&nbsp;Male &nbsp;&nbsp;
+                              <input type="radio" class="glabels" value="female" id="rad1" name="rads" required>&nbsp;Female
+                            </form>
                             <br>
-                                <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Get your Cute Name!</button></a> 
-                                <h1 id="results"></h1>    
-                            </div>
-                        </div>
+                            <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Check out your name!</button></a>
+                            <h1 id="result"></h1>
                     </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <script src="js/script.js"></script>
-</body>
-</html>
+              </div>
+
+                <div class="card ">
+                    <div class="card-body text-center">
+                      <p class="card-text">Names are based on gender and the date you were born. <br>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-globe fa-stack-1x" style="color:rgb(188, 222, 252)"></i>
+                          </span><a href="http://www.afropedea.org/akan-names"> More info on Akan names</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              <footer class="page-footer ">
+                <div class="footer">Copyright © 2020:
+                  <a href="https://github.com/nkmakau"> Noshmak</a>
+                </div>
+              </footer>
+          </div>
+          <script src="js/script.js"></script>
+          </body>
+        </html>
+        
