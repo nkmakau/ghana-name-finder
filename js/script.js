@@ -46,8 +46,7 @@ function calculateDay(){
       dayOfWeek = dayOfWeek * -1
     }
     else if (dayOfWeek > 0) {
-      alert("Kindly input the correct birthday")
-      //return dayOfWeek
+    return dayOfWeek
     }
 }
 

@@ -33,6 +33,7 @@ Here is a run through of how to set up the application
 
 ## Known Bugs
 * Formula provided to determine day of birth shows results after alert to correct wrong entry.
+* Alert shows when you enter wrong date but not when you leave blank noted on 9/06/2020
 
 ## Technologies Used
 * HTML  
