@@ -18,8 +18,8 @@
                           <h1 class="text-center head">Ghananian Name finder</h1>
                           <p class="intro">The Akan people of Ghana name their children after the day of the week
                             they were born.</p>
-                          <p class="intro">This web application will takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.                
-                          </p> 
+                          <p class="intro">This web application will takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
+                          </p>
                           <p class="fs12">Here are some Ghanaian Names:</p>
                           <div class="row ghanaian-names">
                               <div class="col-md-6">
@@ -44,13 +44,13 @@
                                       <li>Thursday:  Yaw</li>
                                       <li>Friday: Kofi</li>
                                       <li>Saturday: Kwame</li>
-                                  </ul>                                 
-                              </div> 
+                                  </ul>
+                              </div>
                               <p class="intro">These "day names" have further meanings concerning the soul and character of the person.</p>
-                              <p class="intro2">What's your Ghananian Akan name?</p>                            
+                              <p class="intro2">What's your Ghananian Akan name?</p>
                           </div>
                       </div>
-                  </div> 
+                  </div>
                 </div>
                 <div class="col-md-6 right">
                   <div class="overlay">
@@ -75,12 +75,15 @@
                             </div>
                             <form class="radio-button">
                               <label for="gender" class="labels">Select your Gender:</label>
-                              <input type="radio" class="glabels" value="male" id="rad1" name="rads" required>&nbsp;Male &nbsp;&nbsp;
-                              <input type="radio" class="glabels" value="female" id="rad1" name="rads" required>&nbsp;Female
+                              <input type="radio" class="glabels" value="male" name="rads" required>&nbsp;Male
+                              &nbsp;&nbsp;
+                              <input type="radio" class="glabels" value="female" name="rads" required>&nbsp;Female
                             </form>
                             <br>
-                            <a href="#result"><button type="button" name="button" class="btn btn-primary mb-2" onclick="checkDayOfWeek();">Check out your name!</button></a>
-                            <h1 id="result"></h1>
+                            <a href="#gname"><button type="button" name="button" class="btn btn-success mb2" onclick="checkDayOfWeek();">Check out your name!</button></a>
+                            <a href=""><button type="button" name="button" class="btn btn-danger" onclick="reset">Start Over!</button></a>
+
+                            <h1 id="gname"></h1>
                     </div>
                   </div>
                 </div>
@@ -105,4 +108,3 @@
           <script src="js/script.js"></script>
           </body>
         </html>
-        

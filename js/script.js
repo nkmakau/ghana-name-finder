@@ -1,3 +1,5 @@
+
+// variables to be used in calculation.
 var century, year, month, dayOfMonth, dayOfWeek, day
 //Get data that has been captured for calculations.
 function getInput(){
@@ -7,7 +9,7 @@ function getInput(){
   dayOfMonth = parseInt(document.getElementById("monthday").value)
 
 //check to confirm data is right.
-  if(century == ""){
+  if(century === ""){
     alert("Input the correct centrury")
     return false
   }else if (century < 19 || century > 20){
@@ -18,7 +20,7 @@ function getInput(){
     return false
   }else if (year < 00 || year > 99){
     alert("Kindly enter your correct year of birth (00 -99)")
-    return false  
+    return false
   }else if (month == ""){
     alert("Input the correct month of birth")
     return false
@@ -44,7 +46,8 @@ function calculateDay(){
       dayOfWeek = dayOfWeek * -1
     }
     else if (dayOfWeek > 0) {
-      return dayOfWeek
+      alert("Kindly input the correct birthday")
+      //return dayOfWeek
     }
 }
 
@@ -52,7 +55,7 @@ function calculateDay(){
  function checkDayOfWeek(){
      day = calculateDay()
       checkGender()
-      console.log("The function runs");//Test chackDayOfWeek function
+      console.log("The function runs");//Test checkDayOfWeek function
 }
 
 //arrays
@@ -74,25 +77,25 @@ function checkGender(){
         case gender = "male":
               switch(day){
                 case (0 || -0):
-                  document.getElementById("result").innerHTML = "The day is on a Sunday." + "  " + "Your Akan name is " + maleNames[0].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Sunday." + "  " + "Your Akan name is " + maleNames[0].toLocaleUpperCase()
                 break
                 case (1 || -1):
-                  document.getElementById("result").innerHTML = "The day is on a Monday." + " " + "Your Akan name is " + maleNames[1].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Monday." + " " + "Your Akan name is " + maleNames[1].toLocaleUpperCase()
                 break
                 case (2 || -2):
-                  document.getElementById("result").innerHTML = "The day is on a Tuesday." + " " + "Your Akan name is " + maleNames[2].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Tuesday." + " " + "Your Akan name is " + maleNames[2].toLocaleUpperCase()
                 break
                 case (3 || -3):
-                  document.getElementById("result").innerHTML = "The day is on a Wednesday." + " " + "Your Akan name is "+ maleNames[3].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Wednesday." + " " + "Your Akan name is "+ maleNames[3].toLocaleUpperCase()
                 break
                 case (4 || -4):
-                  document.getElementById("result").innerHTML = "The day is on a Thursday." + " " + "Your Akan name is " + maleNames[4].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Thursday." + " " + "Your Akan name is " + maleNames[4].toLocaleUpperCase()
                 break
                 case (5 || -5):
-                  document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your Akan name is " + maleNames[5].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Friday." + " " + "Your Akan name is " + maleNames[5].toLocaleUpperCase()
                 break
                 case (6 || -6):
-                  document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your Akan name is " + maleNames[6].toLocaleUpperCase()
+                  document.getElementById("gname").innerHTML = "The day is on a Saturday." + " " + "Your Akan name is " + maleNames[6].toLocaleUpperCase()
                 break
                 default:
                 // console.console.log("Pass");//Test male case
@@ -101,25 +104,25 @@ function checkGender(){
         case gender = "female":
           switch(day){
             case (0 || -0):
-              document.getElementById("result").innerHTML = "The day is on a Sunday." + "  " + "Your Akan name is " + femaleNames[0].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Sunday." + "  " + "Your Akan name is " + femaleNames[0].toLocaleUpperCase()
             break
             case (1 || -1):
-              document.getElementById("result").innerHTML = "The day is on a Monday." + " " + "Your Akan name is " + femaleNames[1].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Monday." + " " + "Your Akan name is " + femaleNames[1].toLocaleUpperCase()
             break
             case (2 || -2):
-              document.getElementById("result").innerHTML = "The day is on a Tuesday." + " " + "Your Akan name is " + femaleNames[2].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Tuesday." + " " + "Your Akan name is " + femaleNames[2].toLocaleUpperCase()
             break
             case (3 || -3):
-              document.getElementById("result").innerHTML = "The day is on a Wednesday." + " " + "Your Akan name is "+ femaleNames[3].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Wednesday." + " " + "Your Akan name is "+ femaleNames[3].toLocaleUpperCase()
             break
             case (4 || -4):
-              document.getElementById("result").innerHTML = "The day is on a Thursday." + " " + "Your Akan name is " + femaleNames[4].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Thursday." + " " + "Your Akan name is " + femaleNames[4].toLocaleUpperCase()
             break
             case (5 || -5):
-              document.getElementById("result").innerHTML = "The day is on a friday." + " " + "Your Akan name is " + femaleNames[5].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Friday." + " " + "Your Akan name is " + femaleNames[5].toLocaleUpperCase()
             break
             case (6 || -6):
-              document.getElementById("result").innerHTML = "The day is on a saturday." + " " + "Your Akan name is " + femaleNames[6].toLocaleUpperCase()
+              document.getElementById("gname").innerHTML = "The day is on a Saturday." + " " + "Your Akan name is " + femaleNames[6].toLocaleUpperCase()
             break
             default:
             // console.console.log("Pass");//Test female case

@@ -19,15 +19,12 @@ body{
 .right{
     background-image: url(../images/girl-head.png);
     background-size: cover;
-    height: 690px; 
+    height: 690px;
 }
 .overlay{
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px 0 0 5px;
-    height: 690px;   
-}
-h1{
-    color: #ffffff;
+    height: 690px;
 }
 .head{
     font-size: 40px;
@@ -49,7 +46,7 @@ h1{
     font-size: large;
     font-weight: bolder;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: rgb(240, 164, 71);    
+    color: rgb(240, 164, 71);
 }
 .ghanaian-names h4, .akan-form h5 {
     color: #bd5d38;
@@ -60,10 +57,10 @@ h1{
 .fs11 {
     font-size: medium;
     text-align: center;
-    list-style-position: inside;  
-    color: antiquewhite;  
+    list-style-position: inside;
+    color: antiquewhite;
 }
-.intro2{ 
+.intro2{
     color: rgb(228, 191, 97);
     font-size: x-large;
     font-weight: bolder;
@@ -73,7 +70,7 @@ h1{
     padding-right: 10px;
 }
 h4{
-    color: #ffffff;    
+    color: #ffffff;
 }
 .head2{
     font-weight: bold;
@@ -84,7 +81,7 @@ h4{
     font-weight: bolder;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-#result{
+#gname{
     margin-top: 30px;
     color: rgb(228, 191, 97);
     font-size: 24px;
